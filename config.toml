@@ -1,0 +1,37 @@
+baseURL = ""
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+title = "Cloud Migration Cookbook"
+copyright = "Copyright 2023 State Street Bank and Trust Company. All Rights Reserved. Confidential."
+theme = "cookbook-clarity"
+publishDir = "public"
+pygmentsCodeFences = true
+pygmentsStyle = "friendly"
+enableRobotsTXT = true
+enableGitInfo = true
+
+[params]
+repoLink = "https://github.com/repository/link/here"
+repoHistoryPrefix = "https://github.com/repository/link/commits/master/content/"
+repoEditPrefix = "https://github.com/repository/link/edit/master/content/"
+logo = "/images/ssc2.png"
+logoAlt = "State Street Bank and Trust Company"
+
+[markup]
+    [markup.highlight]
+        style = "solarized-dark"
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+home = [ "HTML", "RSS", "SearchIndex"]
+
+[[menu.shortcuts]]
+pre = "<h5>&nbsp;</h5>"
+name = "<i class='fa fa-tag'></i>&nbsp;&nbsp;All Tags"
+url = "/tags/"

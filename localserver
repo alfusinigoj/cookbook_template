@@ -1,0 +1,3 @@
+#!/bin/sh
+./hugow --get-latest
+./.hugo/hugo server -wDs . -b http://localhost:1313/
